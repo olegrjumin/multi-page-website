@@ -1,5 +1,5 @@
-# Web Components
+# Multi-page website
 
-* [Buttons](components/buttons)
+Contains projects and it can be viewed live via Github Pages
 
-All Components live on Github Pages [GitHub Pages]()
+[oleg.rjumin]()
