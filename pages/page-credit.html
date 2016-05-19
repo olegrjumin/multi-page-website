@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Web Components</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__welcome">
+        <h1 class="header__heading font-xxl">Web Components</h1>
+      </div>
+      <nav class="header__nav" role="navigation">
+        <ul class="header__menu">
+          <li><a class="header__link" href="../pages/page-intro.html">Intro</a></li>
+          <li><a class="header__link" href="../pages/page-buttons.html">Buttons</a></li>
+          <li><a class="header__link" href="../pages/page-sidebar.html">Sidebar</a></li>
+          <li><a class="header__link" href="../pages/page-all.html">Forms and Inputs</a></li>
+          <li><a class="header__link" href="../pages/page-calculator.html">Calculator</a></li>
+          <li><a class="header__link" href="../pages/page-product-listing.html">Product Listing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-content">
+      <div class="row">
+        <div class="col s2 no-padding">
+                    <aside class="sidebar">
+                      <nav class="sidebar__nav">
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-all.html">all</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-signup.html">signup</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-search.html">search</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-questionnaire.html">questionnaire</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-login.html">login</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-cbuilding.html">cbuilding</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-credit.html">credit</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-scheduling.html">scheduling</a></li>
+                        </ul>
+                        <ul class="sidebar__menu">
+                          <li class="sidebar__item"><a class="sidebar__link" href="page-shipping.html">shipping</a></li>
+                        </ul>
+                      </nav>
+                    </aside>
+        </div>
+        <div class="col s10 no-padding">
+          <main role="main">
+            <section>
+              <form class="credit" role="form">
+                <div class="row">
+                  <h3 class="font-xxl lh-xxl font-light center">Payment</h3>
+                  <p class="font-m lh-m center">Enter your credit card details</p>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <label for="credit-name">Cardholder's name</label>
+                  </div>
+                  <div class="col s12">
+                    <input class="input-field" type="email" name="email" id="credit-name" placeholder="Cardholder's name" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <label for="credit-number">Card's number</label>
+                  </div>
+                  <div class="col s12">
+                    <input class="input-field" type="text" name="number" id="credit-number" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <label for="credit-date">Expiry Date</label>
+                  </div>
+                  <div class="col s4">
+                    <select>
+                      <option disabled selected>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                  </div>
+                  <div class="col s4">
+                    <select>
+                      <option disabled selected>Year</option>
+                      <option>2016</option>
+                      <option>2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      <option>2031</option>
+                    </select>
+                  </div>
+                  <div class="col s4">
+                    <input class="input-field" type="text" name="cvv" id="credit-cvv" maxlength="3" placeholder="CVV" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s6 right-align"><a class="credit__cancel" href="#/">Cancel</a></div>
+                  <div class="col s6">
+                    <button class="button button-full" type="submit" role="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <svg style="display:none">
+      <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewbox="0 0 24 24">
+        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+      </symbol>
+      <symbol id="plus-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewbox="0 0 24 24">
+        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+      </symbol>
+      <symbol id="minus-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewbox="0 0 24 24">
+        <path d="M19,13H5V11H19V13Z"></path>
+      </symbol>
+      <symbol id="checkbox-icon" width="15" height="15" viewbox="0 0 24 24">
+        <path fill="#000000" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
+      </symbol>
+      <symbol id="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewbox="0 0 24 24">
+        <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+      </symbol>
+    </svg>
+  </body>
+</html>
